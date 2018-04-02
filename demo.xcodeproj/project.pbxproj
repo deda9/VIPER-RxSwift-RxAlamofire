@@ -104,6 +104,34 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8FA730052072B40600339030 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		8FA730062072B40D00339030 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8FA730072072B41400339030 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		8FA730082072B41B00339030 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		8FE4EF072072AC1400058CD1 = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +157,10 @@
 		8FE4EF122072AC1400058CD1 /* demo */ = {
 			isa = PBXGroup;
 			children = (
+				8FA730082072B41B00339030 /* Utils */,
+				8FA730072072B41400339030 /* Network */,
+				8FA730062072B40D00339030 /* Models */,
+				8FA730052072B40600339030 /* UI */,
 				8FE4EF132072AC1400058CD1 /* AppDelegate.swift */,
 				8FE4EF152072AC1400058CD1 /* ViewController.swift */,
 				8FE4EF172072AC1400058CD1 /* Main.storyboard */,
