@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13770" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13770"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +17,29 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="0fZ-zQ-dQ9">
+                                <rect key="frame" x="117" y="244" width="141" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="141" id="0PC-0p-PfX"/>
+                                    <constraint firstAttribute="height" constant="59" id="WLB-Mi-z4j"/>
+                                </constraints>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="wunder" translatesAutoresizingMaskIntoConstraints="NO" id="Xx0-zO-hCK">
+                                <rect key="frame" x="101" y="333" width="173" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="hi0-ju-wVb"/>
+                                    <constraint firstAttribute="width" constant="173" id="pOR-C5-TIx"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0fZ-zQ-dQ9" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-60" id="KJt-fY-WXK"/>
+                            <constraint firstItem="0fZ-zQ-dQ9" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="KU7-fE-Aey"/>
+                            <constraint firstItem="Xx0-zO-hCK" firstAttribute="top" secondItem="0fZ-zQ-dQ9" secondAttribute="bottom" constant="30" id="YwZ-6N-4kk"/>
+                            <constraint firstItem="Xx0-zO-hCK" firstAttribute="centerX" secondItem="0fZ-zQ-dQ9" secondAttribute="centerX" id="cC1-XX-uiN"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -22,4 +48,8 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo" width="141" height="59"/>
+        <image name="wunder" width="173" height="44"/>
+    </resources>
 </document>
