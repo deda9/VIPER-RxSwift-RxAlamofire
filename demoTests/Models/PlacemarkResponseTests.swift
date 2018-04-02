@@ -30,28 +30,48 @@ class PlacemarkResponseTests: QuickSpec {
             }
             
             it("placemark name not equal nil") {
-                let placemark = sutResponse.placemarksList?[0].name
-                expect(placemark).notTo(beNil())
+                let name = sutResponse.placemarksList?[0].name
+                expect(name).notTo(beNil())
             }
             
             it("placemark name equal value") {
-                let placemark = sutResponse.placemarksList?[0].name
-                expect(placemark).to(equal("HH-GO8522"))
+                let name = sutResponse.placemarksList?[0].name
+                expect(name).to(equal("HH-GO8522"))
             }
             
             it("placemark address not equal nil") {
-                let placemark = sutResponse.placemarksList?[0].address
-                expect(placemark).notTo(beNil())
+                let address = sutResponse.placemarksList?[0].address
+                expect(address).notTo(beNil())
             }
             
             it("placemark address equal value") {
-                let placemark = sutResponse.placemarksList?[0].address
-                expect(placemark).to(equal("Lesserstraße 170, 22049 Hamburg"))
+                let address = sutResponse.placemarksList?[0].address
+                expect(address).to(equal("Lesserstraße 170, 22049 Hamburg"))
             }
             
             it("placemark address not equal value") {
-                let placemark = sutResponse.placemarksList?[0].address
-                expect(placemark).notTo(equal("dummy address"))
+                let address = sutResponse.placemarksList?[0].address
+                expect(address).notTo(equal("dummy address"))
+            }
+            
+            it("placemark engineType not equal nil") {
+                let engineType = sutResponse.placemarksList?[0].engineType
+                expect(engineType).notTo(beNil())
+            }
+       
+            it("placemark exterior not equal nil") {
+                let exterior = sutResponse.placemarksList?[0].exterior
+                expect(exterior).notTo(beNil())
+            }
+            
+            it("placemark fuel not equal nil") {
+                let fuel = sutResponse.placemarksList?[0].fuel
+                expect(fuel).notTo(beNil())
+            }
+            
+            it("placemark vin not equal nil") {
+                let vin = sutResponse.placemarksList?[0].vin
+                expect(vin).notTo(beNil())
             }
         }
     }

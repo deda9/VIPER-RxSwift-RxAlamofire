@@ -7,7 +7,7 @@
 //
 
 enum Servers{
-    public static let DEV = "https://s3­-us-­west­-2.amazonaws.com/wunderbucket/"
+    public static let DEV = "https://s3-us-west-2.amazonaws.com/wunderbucket/"
 }
 
 class Constants{

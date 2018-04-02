@@ -8,11 +8,11 @@
 
 import UIKit
 
-class TabsViewController
-: UIViewController {
+class TabsViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
     }
 }
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13770" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13770" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IeS-Pk-kYJ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,19 +10,88 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tabs View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Map-->
+        <scene sceneID="wlh-0G-5sh">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="TabsViewController" customModule="demo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="B9J-NS-htN" customClass="MapTabViewController" customModule="demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qNe-ht-9R4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ySv-yn-FfL">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ySv-yn-FfL" firstAttribute="trailing" secondItem="Sc9-Td-kQD" secondAttribute="trailing" id="Cfc-nI-fl4"/>
+                            <constraint firstItem="ySv-yn-FfL" firstAttribute="top" secondItem="Sc9-Td-kQD" secondAttribute="top" id="GFo-Rm-e3D"/>
+                            <constraint firstItem="Sc9-Td-kQD" firstAttribute="bottom" secondItem="ySv-yn-FfL" secondAttribute="bottom" id="aBz-3Z-ZvE"/>
+                            <constraint firstItem="ySv-yn-FfL" firstAttribute="leading" secondItem="Sc9-Td-kQD" secondAttribute="leading" id="nfz-D7-F7J"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Sc9-Td-kQD"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Map" image="map" id="Sc9-g6-zdY"/>
+                    <connections>
+                        <outlet property="mapView" destination="ySv-yn-FfL" id="jkw-aJ-wtI"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="srp-Es-yGB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-839.20000000000005" y="-32.833583208395808"/>
+        </scene>
+        <!--Cars-->
+        <scene sceneID="Row-0o-bkW">
+            <objects>
+                <viewController id="8JC-4G-a8I" customClass="CarTabViewController" customModule="demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dUi-hJ-fOW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4sh-bd-2L6">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4sh-bd-2L6" firstAttribute="leading" secondItem="7EU-ki-hHw" secondAttribute="leading" id="JIe-oP-pwA"/>
+                            <constraint firstItem="4sh-bd-2L6" firstAttribute="top" secondItem="7EU-ki-hHw" secondAttribute="top" id="fbe-yT-xB5"/>
+                            <constraint firstItem="7EU-ki-hHw" firstAttribute="trailing" secondItem="4sh-bd-2L6" secondAttribute="trailing" id="lmv-SW-Jd0"/>
+                            <constraint firstItem="7EU-ki-hHw" firstAttribute="bottom" secondItem="4sh-bd-2L6" secondAttribute="bottom" id="r1G-cU-8ma"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7EU-ki-hHw"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Cars" image="car" id="iUX-n8-34e" userLabel="Cars"/>
+                    <connections>
+                        <outlet property="carsTableView" destination="4sh-bd-2L6" id="fos-is-YzZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9f3-cC-6BD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-840" y="-698"/>
+        </scene>
+        <!--Tabs View Controller-->
+        <scene sceneID="tQh-62-9CY">
+            <objects>
+                <tabBarController id="IeS-Pk-kYJ" customClass="TabsViewController" customModule="demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Hn2-1S-aVZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="8JC-4G-a8I" kind="relationship" relationship="viewControllers" id="RkN-4k-Hsh"/>
+                        <segue destination="B9J-NS-htN" kind="relationship" relationship="viewControllers" id="rwG-LP-Rhu"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JeW-ti-V5C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1793" y="-364"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="car" width="30" height="30"/>
+        <image name="map" width="30" height="30"/>
+    </resources>
 </document>

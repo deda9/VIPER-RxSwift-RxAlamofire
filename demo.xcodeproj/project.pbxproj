@@ -15,6 +15,12 @@
 		8FA730172072BB8D00339030 /* Placemark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA730162072BB8D00339030 /* Placemark.swift */; };
 		8FA730192072BC1400339030 /* PlacemarkResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA730182072BC1400339030 /* PlacemarkResponseTests.swift */; };
 		8FA7301D2072BD8500339030 /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = 8FA7301C2072BD8500339030 /* locations.json */; };
+		8FA730212072C73600339030 /* PlacemarkListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA730202072C73600339030 /* PlacemarkListService.swift */; };
+		8FA730262072C75A00339030 /* AlamofireDataRequestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA730232072C75A00339030 /* AlamofireDataRequestExtensions.swift */; };
+		8FA730272072C75A00339030 /* BaseMappableNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA730242072C75A00339030 /* BaseMappableNetworkRequest.swift */; };
+		8FA730282072C75A00339030 /* BaseNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA730252072C75A00339030 /* BaseNetworkRequest.swift */; };
+		8FDC58AD2072E30E00F56F32 /* MapTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDC58AC2072E30E00F56F32 /* MapTabViewController.swift */; };
+		8FDC58AF2072E31500F56F32 /* CarTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDC58AE2072E31500F56F32 /* CarTabViewController.swift */; };
 		8FE4EF142072AC1400058CD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4EF132072AC1400058CD1 /* AppDelegate.swift */; };
 		8FE4EF162072AC1400058CD1 /* TabsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4EF152072AC1400058CD1 /* TabsViewController.swift */; };
 		8FE4EF192072AC1400058CD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FE4EF172072AC1400058CD1 /* Main.storyboard */; };
@@ -55,6 +61,12 @@
 		8FA730162072BB8D00339030 /* Placemark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placemark.swift; sourceTree = "<group>"; };
 		8FA730182072BC1400339030 /* PlacemarkResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacemarkResponseTests.swift; sourceTree = "<group>"; };
 		8FA7301C2072BD8500339030 /* locations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = locations.json; sourceTree = "<group>"; };
+		8FA730202072C73600339030 /* PlacemarkListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacemarkListService.swift; sourceTree = "<group>"; };
+		8FA730232072C75A00339030 /* AlamofireDataRequestExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireDataRequestExtensions.swift; sourceTree = "<group>"; };
+		8FA730242072C75A00339030 /* BaseMappableNetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseMappableNetworkRequest.swift; sourceTree = "<group>"; };
+		8FA730252072C75A00339030 /* BaseNetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNetworkRequest.swift; sourceTree = "<group>"; };
+		8FDC58AC2072E30E00F56F32 /* MapTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTabViewController.swift; sourceTree = "<group>"; };
+		8FDC58AE2072E31500F56F32 /* CarTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTabViewController.swift; sourceTree = "<group>"; };
 		8FE4EF102072AC1400058CD1 /* demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FE4EF132072AC1400058CD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FE4EF152072AC1400058CD1 /* TabsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsViewController.swift; sourceTree = "<group>"; };
@@ -129,8 +141,10 @@
 		8FA730052072B40600339030 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				8FA7300D2072B46600339030 /* Tabs */,
 				8FA7300A2072B44F00339030 /* Base */,
+				8FDC58AB2072E29400F56F32 /* MapTab */,
+				8FDC58AA2072E28C00F56F32 /* CarTab */,
+				8FA7300D2072B46600339030 /* Tabs */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -147,6 +161,8 @@
 		8FA730072072B41400339030 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				8FA730222072C75A00339030 /* Base */,
+				8FA730202072C73600339030 /* PlacemarkListService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -187,10 +203,36 @@
 		8FA730132072BB6B00339030 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				8FA7301C2072BD8500339030 /* locations.json */,
 				8FA730182072BC1400339030 /* PlacemarkResponseTests.swift */,
+				8FA7301C2072BD8500339030 /* locations.json */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		8FA730222072C75A00339030 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				8FA730232072C75A00339030 /* AlamofireDataRequestExtensions.swift */,
+				8FA730242072C75A00339030 /* BaseMappableNetworkRequest.swift */,
+				8FA730252072C75A00339030 /* BaseNetworkRequest.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		8FDC58AA2072E28C00F56F32 /* CarTab */ = {
+			isa = PBXGroup;
+			children = (
+				8FDC58AE2072E31500F56F32 /* CarTabViewController.swift */,
+			);
+			path = CarTab;
+			sourceTree = "<group>";
+		};
+		8FDC58AB2072E29400F56F32 /* MapTab */ = {
+			isa = PBXGroup;
+			children = (
+				8FDC58AC2072E30E00F56F32 /* MapTabViewController.swift */,
+			);
+			path = MapTab;
 			sourceTree = "<group>";
 		};
 		8FE4EF072072AC1400058CD1 = {
@@ -589,11 +631,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FE4EF162072AC1400058CD1 /* TabsViewController.swift in Sources */,
+				8FDC58AF2072E31500F56F32 /* CarTabViewController.swift in Sources */,
 				8FE4EF142072AC1400058CD1 /* AppDelegate.swift in Sources */,
+				8FA730262072C75A00339030 /* AlamofireDataRequestExtensions.swift in Sources */,
 				8FA730152072BB8400339030 /* PlacemarkResponse.swift in Sources */,
 				8FA7300C2072B45600339030 /* BaseViewController.swift in Sources */,
+				8FA730272072C75A00339030 /* BaseMappableNetworkRequest.swift in Sources */,
 				8FA730172072BB8D00339030 /* Placemark.swift in Sources */,
+				8FDC58AD2072E30E00F56F32 /* MapTabViewController.swift in Sources */,
 				8FA7300F2072B4DE00339030 /* Constants.swift in Sources */,
+				8FA730212072C73600339030 /* PlacemarkListService.swift in Sources */,
+				8FA730282072C75A00339030 /* BaseNetworkRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
