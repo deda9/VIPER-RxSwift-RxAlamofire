@@ -11,6 +11,10 @@
 		8FA7300C2072B45600339030 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA7300B2072B45600339030 /* BaseViewController.swift */; };
 		8FA7300F2072B4DE00339030 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA7300E2072B4DE00339030 /* Constants.swift */; };
 		8FA730122072B56200339030 /* ConstantsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA730112072B56200339030 /* ConstantsTests.swift */; };
+		8FA730152072BB8400339030 /* PlacemarkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA730142072BB8400339030 /* PlacemarkResponse.swift */; };
+		8FA730172072BB8D00339030 /* Placemark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA730162072BB8D00339030 /* Placemark.swift */; };
+		8FA730192072BC1400339030 /* PlacemarkResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA730182072BC1400339030 /* PlacemarkResponseTests.swift */; };
+		8FA7301D2072BD8500339030 /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = 8FA7301C2072BD8500339030 /* locations.json */; };
 		8FE4EF142072AC1400058CD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4EF132072AC1400058CD1 /* AppDelegate.swift */; };
 		8FE4EF162072AC1400058CD1 /* TabsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4EF152072AC1400058CD1 /* TabsViewController.swift */; };
 		8FE4EF192072AC1400058CD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FE4EF172072AC1400058CD1 /* Main.storyboard */; };
@@ -47,6 +51,10 @@
 		8FA7300B2072B45600339030 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		8FA7300E2072B4DE00339030 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8FA730112072B56200339030 /* ConstantsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsTests.swift; sourceTree = "<group>"; };
+		8FA730142072BB8400339030 /* PlacemarkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacemarkResponse.swift; sourceTree = "<group>"; };
+		8FA730162072BB8D00339030 /* Placemark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placemark.swift; sourceTree = "<group>"; };
+		8FA730182072BC1400339030 /* PlacemarkResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacemarkResponseTests.swift; sourceTree = "<group>"; };
+		8FA7301C2072BD8500339030 /* locations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = locations.json; sourceTree = "<group>"; };
 		8FE4EF102072AC1400058CD1 /* demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FE4EF132072AC1400058CD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FE4EF152072AC1400058CD1 /* TabsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +138,8 @@
 		8FA730062072B40D00339030 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8FA730142072BB8400339030 /* PlacemarkResponse.swift */,
+				8FA730162072BB8D00339030 /* Placemark.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -174,6 +184,15 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		8FA730132072BB6B00339030 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8FA7301C2072BD8500339030 /* locations.json */,
+				8FA730182072BC1400339030 /* PlacemarkResponseTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		8FE4EF072072AC1400058CD1 = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +233,7 @@
 		8FE4EF272072AC1500058CD1 /* demoTests */ = {
 			isa = PBXGroup;
 			children = (
+				8FA730132072BB6B00339030 /* Models */,
 				8FA730102072B55800339030 /* Utils */,
 				8FE4EF282072AC1500058CD1 /* demoTests.swift */,
 				8FE4EF2A2072AC1500058CD1 /* Info.plist */,
@@ -356,6 +376,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FA7301D2072BD8500339030 /* locations.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,7 +590,9 @@
 			files = (
 				8FE4EF162072AC1400058CD1 /* TabsViewController.swift in Sources */,
 				8FE4EF142072AC1400058CD1 /* AppDelegate.swift in Sources */,
+				8FA730152072BB8400339030 /* PlacemarkResponse.swift in Sources */,
 				8FA7300C2072B45600339030 /* BaseViewController.swift in Sources */,
+				8FA730172072BB8D00339030 /* Placemark.swift in Sources */,
 				8FA7300F2072B4DE00339030 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -580,6 +603,7 @@
 			files = (
 				8FE4EF292072AC1500058CD1 /* demoTests.swift in Sources */,
 				8FA730122072B56200339030 /* ConstantsTests.swift in Sources */,
+				8FA730192072BC1400339030 /* PlacemarkResponseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
