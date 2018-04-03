@@ -8,15 +8,18 @@
 
 import Quick
 import Nimble
-import ObjectMapper
 
 @testable import demo
 class PlacemarkResponseTests: QuickSpec {
+    
     override func spec() {
+        
         describe("PlacemarkResponse initialization") {
+            
             var sutResponse: PlacemarkResponse!
+
             beforeEach {
-                sutResponse = self.getPlacemarkResponseMock()
+                sutResponse = TestHelper().getPlacemarkResponseMock()
             }
             
             it("placemarksList must not be empty") {
@@ -74,22 +77,5 @@ class PlacemarkResponseTests: QuickSpec {
                 expect(vin).notTo(beNil())
             }
         }
-    }
-    
-    func getPlacemarkResponseMock() -> PlacemarkResponse?{
-        let bundle = Bundle(for: type(of: self))
-        let path = bundle.path(forResource: "locations", ofType: "json")
-        let pathUrl = "file://" + path!
-        do {
-            let jsonData = try Data(contentsOf: NSURL.init(string: pathUrl)! as URL, options: .alwaysMapped)
-            guard let json = try? JSONSerialization.jsonObject(with: jsonData, options: .allowFragments) else {
-                return nil
-            }
-            return  Mapper<PlacemarkResponse>().map(JSON: json as! [String : Any])
-            
-        }catch(let error){
-            print (error.localizedDescription)
-        }
-        return nil
     }
 }

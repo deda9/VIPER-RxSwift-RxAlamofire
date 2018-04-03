@@ -170,7 +170,7 @@
                   moduleName = "demo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Deda/Documents/iOS/Work/Wunder/demo/demo/Network/Base/AlamofireDataRequestExtensions.swift"
-                  timestampString = "544399244.388387"
+                  timestampString = "544481909.465723"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "87"
@@ -185,7 +185,7 @@
                   moduleName = "demo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Deda/Documents/iOS/Work/Wunder/demo/demo/Network/Base/AlamofireDataRequestExtensions.swift"
-                  timestampString = "544399244.390972"
+                  timestampString = "544481909.4686199"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "87"
@@ -207,8 +207,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "37"
             endingLineNumber = "37"
-            landmarkName = "getResponseArray(url:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
@@ -218,7 +218,7 @@
                   moduleName = "demo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Deda/Documents/iOS/Work/Wunder/demo/demo/Network/Base/BaseMappableNetworkRequest.swift"
-                  timestampString = "544399244.398605"
+                  timestampString = "544481909.474382"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "37"
@@ -233,12 +233,140 @@
                   moduleName = "demo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Deda/Documents/iOS/Work/Wunder/demo/demo/Network/Base/BaseMappableNetworkRequest.swift"
-                  timestampString = "544399244.408811"
+                  timestampString = "544481909.477355"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "38"
                   endingLineNumber = "38"
                   offsetFromSymbolStart = "18">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "demoTests/TestHelper.swift"
+            timestampString = "544482891.8846509"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "getPlacemarkResponseMock()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "demoTests/TestHelper.swift"
+            timestampString = "544482891.884795"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "getPlacemarkResponseMock()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "demoTests/UI/Cell/CarInfoTableViewCellTests.swift"
+            timestampString = "544482891.884905"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "spec()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in demoTests.CarInfoTableViewCellTests.spec() -&gt; ()"
+                  moduleName = "demoTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Deda/Documents/iOS/Work/Wunder/demo/demoTests/UI/Cell/CarInfoTableViewCellTests.swift"
+                  timestampString = "544481910.211386"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in closure #2 () -&gt; () in demoTests.CarInfoTableViewCellTests.spec() -&gt; ()"
+                  moduleName = "demoTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Deda/Documents/iOS/Work/Wunder/demo/demoTests/UI/Cell/CarInfoTableViewCellTests.swift"
+                  timestampString = "544481910.21571"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "demoTests/UI/Cell/CarInfoTableViewCellTests.swift"
+            timestampString = "544482891.8856241"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "spec()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in closure #2 () -&gt; () in demoTests.CarInfoTableViewCellTests.spec() -&gt; ()"
+                  moduleName = "demoTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Deda/Documents/iOS/Work/Wunder/demo/demoTests/UI/Cell/CarInfoTableViewCellTests.swift"
+                  timestampString = "544481910.227522"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "25">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #1 : @autoclosure () throws -&gt; Swift.Optional&lt;__ObjC.UITableView&gt; in closure #2 () -&gt; () in closure #2 () -&gt; () in demoTests.CarInfoTableViewCellTests.spec() -&gt; ()"
+                  moduleName = "demoTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Deda/Documents/iOS/Work/Wunder/demo/demoTests/UI/Cell/CarInfoTableViewCellTests.swift"
+                  timestampString = "544481910.229903"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "29">
                </Location>
             </Locations>
          </BreakpointContent>

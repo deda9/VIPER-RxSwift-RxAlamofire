@@ -16,12 +16,12 @@ class ConstantsTests: QuickSpec {
             
             it("BASE URL must be initialized") {
                 let baseURL = Constants.BASE_URL
-                let actualBaseURL = "https://s3­-us-­west­-2.amazonaws.com/wunderbucket/"
+                let actualBaseURL = "https://s3-us-west-2.amazonaws.com/wunderbucket/"
                 expect(baseURL).to(equal(actualBaseURL))
             }
             
             it("Location endPoint must must be initialized") {
-                let actualLocationEndPoint = "https://s3­-us-­west­-2.amazonaws.com/wunderbucket/locations.json"
+                let actualLocationEndPoint = "https://s3-us-west-2.amazonaws.com/wunderbucket/locations.json"
                 let locationEndPoint = APIPath.locations.path
                 expect(locationEndPoint).to(equal(actualLocationEndPoint))
             }

@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		151E21367D009A983A908C36 /* Pods_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CA02F07816699BD37C1B57 /* Pods_demo.framework */; };
+		8F33ED792074174300F210D2 /* CarInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33ED782074174300F210D2 /* CarInfoTableViewCell.swift */; };
+		8F33ED7B20741BAE00F210D2 /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33ED7A20741BAE00F210D2 /* IntExtensions.swift */; };
+		8F33ED7F20741C2900F210D2 /* CarInfoTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33ED7E20741C2900F210D2 /* CarInfoTableViewCellTests.swift */; };
+		8F33ED8120741C4900F210D2 /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33ED8020741C4900F210D2 /* TestHelper.swift */; };
+		8F33ED83207423ED00F210D2 /* CarTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33ED82207423ED00F210D2 /* CarTableViewDataSource.swift */; };
 		8FA7300C2072B45600339030 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA7300B2072B45600339030 /* BaseViewController.swift */; };
 		8FA7300F2072B4DE00339030 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA7300E2072B4DE00339030 /* Constants.swift */; };
 		8FA730122072B56200339030 /* ConstantsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA730112072B56200339030 /* ConstantsTests.swift */; };
@@ -54,6 +59,11 @@
 		1DC914F407BAD680F3D34426 /* Pods-demo-demoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demo-demoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-demo-demoUITests/Pods-demo-demoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		38758ED84E870059870926DB /* Pods-demo-demoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demo-demoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-demo-demoTests/Pods-demo-demoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6517B9E76C0D8B4070D948F6 /* Pods-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-demo/Pods-demo.debug.xcconfig"; sourceTree = "<group>"; };
+		8F33ED782074174300F210D2 /* CarInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarInfoTableViewCell.swift; sourceTree = "<group>"; };
+		8F33ED7A20741BAE00F210D2 /* IntExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtensions.swift; sourceTree = "<group>"; };
+		8F33ED7E20741C2900F210D2 /* CarInfoTableViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarInfoTableViewCellTests.swift; sourceTree = "<group>"; };
+		8F33ED8020741C4900F210D2 /* TestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelper.swift; sourceTree = "<group>"; };
+		8F33ED82207423ED00F210D2 /* CarTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTableViewDataSource.swift; sourceTree = "<group>"; };
 		8FA7300B2072B45600339030 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		8FA7300E2072B4DE00339030 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8FA730112072B56200339030 /* ConstantsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsTests.swift; sourceTree = "<group>"; };
@@ -138,9 +148,34 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8F33ED772074173500F210D2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8F33ED782074174300F210D2 /* CarInfoTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		8F33ED7C20741C1B00F210D2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8F33ED7D20741C2200F210D2 /* Cell */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		8F33ED7D20741C2200F210D2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8F33ED7E20741C2900F210D2 /* CarInfoTableViewCellTests.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		8FA730052072B40600339030 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				8F33ED772074173500F210D2 /* Cells */,
 				8FA7300A2072B44F00339030 /* Base */,
 				8FDC58AB2072E29400F56F32 /* MapTab */,
 				8FDC58AA2072E28C00F56F32 /* CarTab */,
@@ -171,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				8FA7300E2072B4DE00339030 /* Constants.swift */,
+				8F33ED7A20741BAE00F210D2 /* IntExtensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -223,6 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				8FDC58AE2072E31500F56F32 /* CarTabViewController.swift */,
+				8F33ED82207423ED00F210D2 /* CarTableViewDataSource.swift */,
 			);
 			path = CarTab;
 			sourceTree = "<group>";
@@ -275,10 +312,12 @@
 		8FE4EF272072AC1500058CD1 /* demoTests */ = {
 			isa = PBXGroup;
 			children = (
+				8F33ED7C20741C1B00F210D2 /* UI */,
 				8FA730132072BB6B00339030 /* Models */,
 				8FA730102072B55800339030 /* Utils */,
 				8FE4EF282072AC1500058CD1 /* demoTests.swift */,
 				8FE4EF2A2072AC1500058CD1 /* Info.plist */,
+				8F33ED8020741C4900F210D2 /* TestHelper.swift */,
 			);
 			path = demoTests;
 			sourceTree = "<group>";
@@ -634,11 +673,14 @@
 				8FDC58AF2072E31500F56F32 /* CarTabViewController.swift in Sources */,
 				8FE4EF142072AC1400058CD1 /* AppDelegate.swift in Sources */,
 				8FA730262072C75A00339030 /* AlamofireDataRequestExtensions.swift in Sources */,
+				8F33ED83207423ED00F210D2 /* CarTableViewDataSource.swift in Sources */,
 				8FA730152072BB8400339030 /* PlacemarkResponse.swift in Sources */,
+				8F33ED792074174300F210D2 /* CarInfoTableViewCell.swift in Sources */,
 				8FA7300C2072B45600339030 /* BaseViewController.swift in Sources */,
 				8FA730272072C75A00339030 /* BaseMappableNetworkRequest.swift in Sources */,
 				8FA730172072BB8D00339030 /* Placemark.swift in Sources */,
 				8FDC58AD2072E30E00F56F32 /* MapTabViewController.swift in Sources */,
+				8F33ED7B20741BAE00F210D2 /* IntExtensions.swift in Sources */,
 				8FA7300F2072B4DE00339030 /* Constants.swift in Sources */,
 				8FA730212072C73600339030 /* PlacemarkListService.swift in Sources */,
 				8FA730282072C75A00339030 /* BaseNetworkRequest.swift in Sources */,
@@ -650,7 +692,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FE4EF292072AC1500058CD1 /* demoTests.swift in Sources */,
+				8F33ED8120741C4900F210D2 /* TestHelper.swift in Sources */,
 				8FA730122072B56200339030 /* ConstantsTests.swift in Sources */,
+				8F33ED7F20741C2900F210D2 /* CarInfoTableViewCellTests.swift in Sources */,
 				8FA730192072BC1400339030 /* PlacemarkResponseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

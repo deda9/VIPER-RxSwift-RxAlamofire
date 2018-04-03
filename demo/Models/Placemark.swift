@@ -10,26 +10,58 @@ import ObjectMapper
 
 public class Placemark: Mappable{
     
-    var address : String?
-    var coordinates : [AnyObject]?
-    var engineType : String?
-    var exterior : String?
-    var fuel : Int?
-    var interior : String?
-    var name : String?
-    var vin : String?
+    private var _address : String?
+    private var _coordinates : [Double]?
+    private var _engineType : String?
+    private var _exterior : String?
+    private var _fuel : Int?
+    private var _interior : String?
+    private var _name : String?
+    private var _vin : String?
+    
+    var address : String{
+        return _address ?? ""
+    }
+    
+    var coordinates : [Double]{
+        return _coordinates ?? []
+    }
+    
+    var engineType : String {
+        return _engineType ?? ""
+    }
+    
+    var exterior : String{
+        return _exterior ?? ""
+    }
+    
+    var fuel : Int{
+        return _fuel ?? 0
+    }
+    
+    var interior : String{
+        return _interior ?? ""
+    }
+    
+    var name : String{
+        return _name ?? ""
+    }
+    
+    var vin : String{
+        return _vin ?? ""
+    }
     
     required public init?(map: Map){}
     
     public func mapping(map: Map){
-        address     <- map["address"]
-        coordinates <- map["coordinates"]
-        engineType  <- map["engineType"]
-        exterior    <- map["exterior"]
-        fuel        <- map["fuel"]
-        interior    <- map["interior"]
-        name        <- map["name"]
-        vin         <- map["vin"]
+        _address     <- map["address"]
+        _coordinates <- map["coordinates"]
+        _engineType  <- map["engineType"]
+        _exterior    <- map["exterior"]
+        _fuel        <- map["fuel"]
+        _interior    <- map["interior"]
+        _name        <- map["name"]
+        _vin         <- map["vin"]
     }
     
 }
