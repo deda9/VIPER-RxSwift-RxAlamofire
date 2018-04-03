@@ -27,6 +27,20 @@ public class Placemark: Mappable{
         return _coordinates ?? []
     }
     
+    var late: Double{
+        if coordinates.count > 0{
+            return coordinates[0]
+        }
+        return 0.0
+    }
+    
+    var long: Double{
+        if coordinates.count > 1{
+            return coordinates[1]
+        }
+        return 0.0
+    }
+    
     var engineType : String {
         return _engineType ?? ""
     }

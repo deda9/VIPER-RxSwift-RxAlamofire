@@ -10,9 +10,9 @@ import UIKit
 
 class BaseViewController: UIViewController {
     
-    fileprivate lazy var activityIndicatorView: UIActivityIndicatorView = {
+    lazy var activityIndicatorView: UIActivityIndicatorView = {
         let activityIndicatorView = UIActivityIndicatorView()
-        activityIndicatorView.color = UIColor.gray
+        activityIndicatorView.color = UIColor.red
         activityIndicatorView.sizeToFit()
         return activityIndicatorView
     }()

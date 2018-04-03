@@ -21,6 +21,7 @@
 		8F33EDAE2074388900F210D2 /* PlaceMarkInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33EDA82074388800F210D2 /* PlaceMarkInteractor.swift */; };
 		8F33EDAF2074388900F210D2 /* PlaceMarkTabViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33EDA92074388900F210D2 /* PlaceMarkTabViewInput.swift */; };
 		8F33EDB02074388900F210D2 /* PlaceMarkPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33EDAA2074388900F210D2 /* PlaceMarkPresenter.swift */; };
+		8F33EDB220743A4B00F210D2 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33EDB120743A4B00F210D2 /* UIViewExtensions.swift */; };
 		8FA7300C2072B45600339030 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA7300B2072B45600339030 /* BaseViewController.swift */; };
 		8FA7300F2072B4DE00339030 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA7300E2072B4DE00339030 /* Constants.swift */; };
 		8FA730122072B56200339030 /* ConstantsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA730112072B56200339030 /* ConstantsTests.swift */; };
@@ -80,6 +81,7 @@
 		8F33EDA82074388800F210D2 /* PlaceMarkInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceMarkInteractor.swift; sourceTree = "<group>"; };
 		8F33EDA92074388900F210D2 /* PlaceMarkTabViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceMarkTabViewInput.swift; sourceTree = "<group>"; };
 		8F33EDAA2074388900F210D2 /* PlaceMarkPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceMarkPresenter.swift; sourceTree = "<group>"; };
+		8F33EDB120743A4B00F210D2 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		8FA7300B2072B45600339030 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		8FA7300E2072B4DE00339030 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8FA730112072B56200339030 /* ConstantsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsTests.swift; sourceTree = "<group>"; };
@@ -246,6 +248,7 @@
 				8FA7300E2072B4DE00339030 /* Constants.swift */,
 				8F33ED7A20741BAE00F210D2 /* IntExtensions.swift */,
 				8F33ED9020742D4C00F210D2 /* AppUtils.swift */,
+				8F33EDB120743A4B00F210D2 /* UIViewExtensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -716,6 +719,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F33EDB220743A4B00F210D2 /* UIViewExtensions.swift in Sources */,
 				8F33EDAB2074388900F210D2 /* PlaceMarkTabPresenterInput.swift in Sources */,
 				8F33EDB02074388900F210D2 /* PlaceMarkPresenter.swift in Sources */,
 				8FE4EF162072AC1400058CD1 /* TabsViewController.swift in Sources */,
