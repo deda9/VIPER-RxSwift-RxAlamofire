@@ -13,14 +13,14 @@
 		8F33ED7F20741C2900F210D2 /* CarInfoTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33ED7E20741C2900F210D2 /* CarInfoTableViewCellTests.swift */; };
 		8F33ED8120741C4900F210D2 /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33ED8020741C4900F210D2 /* TestHelper.swift */; };
 		8F33ED83207423ED00F210D2 /* CarTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33ED82207423ED00F210D2 /* CarTableViewDataSource.swift */; };
-		8F33ED852074292B00F210D2 /* CarTabViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33ED842074292B00F210D2 /* CarTabViewInput.swift */; };
-		8F33ED872074294300F210D2 /* CarTabPresenterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33ED862074294300F210D2 /* CarTabPresenterInput.swift */; };
-		8F33ED892074298300F210D2 /* CarTabInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33ED882074298300F210D2 /* CarTabInteractorInput.swift */; };
-		8F33ED8B2074298B00F210D2 /* CarTabInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33ED8A2074298B00F210D2 /* CarTabInteractorOutput.swift */; };
-		8F33ED8D2074299300F210D2 /* CarTabInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33ED8C2074299300F210D2 /* CarTabInteractor.swift */; };
-		8F33ED8F2074299A00F210D2 /* CarTabPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33ED8E2074299A00F210D2 /* CarTabPresenter.swift */; };
 		8F33ED9120742D4C00F210D2 /* AppUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33ED9020742D4C00F210D2 /* AppUtils.swift */; };
 		8F33ED9520742DDD00F210D2 /* Localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8F33ED9420742DDD00F210D2 /* Localization.strings */; };
+		8F33EDAB2074388900F210D2 /* PlaceMarkTabPresenterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33EDA52074388800F210D2 /* PlaceMarkTabPresenterInput.swift */; };
+		8F33EDAC2074388900F210D2 /* PlaceMarkInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33EDA62074388800F210D2 /* PlaceMarkInteractorOutput.swift */; };
+		8F33EDAD2074388900F210D2 /* PlaceMarkInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33EDA72074388800F210D2 /* PlaceMarkInteractorInput.swift */; };
+		8F33EDAE2074388900F210D2 /* PlaceMarkInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33EDA82074388800F210D2 /* PlaceMarkInteractor.swift */; };
+		8F33EDAF2074388900F210D2 /* PlaceMarkTabViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33EDA92074388900F210D2 /* PlaceMarkTabViewInput.swift */; };
+		8F33EDB02074388900F210D2 /* PlaceMarkPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33EDAA2074388900F210D2 /* PlaceMarkPresenter.swift */; };
 		8FA7300C2072B45600339030 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA7300B2072B45600339030 /* BaseViewController.swift */; };
 		8FA7300F2072B4DE00339030 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA7300E2072B4DE00339030 /* Constants.swift */; };
 		8FA730122072B56200339030 /* ConstantsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA730112072B56200339030 /* ConstantsTests.swift */; };
@@ -72,14 +72,14 @@
 		8F33ED7E20741C2900F210D2 /* CarInfoTableViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarInfoTableViewCellTests.swift; sourceTree = "<group>"; };
 		8F33ED8020741C4900F210D2 /* TestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelper.swift; sourceTree = "<group>"; };
 		8F33ED82207423ED00F210D2 /* CarTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTableViewDataSource.swift; sourceTree = "<group>"; };
-		8F33ED842074292B00F210D2 /* CarTabViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTabViewInput.swift; sourceTree = "<group>"; };
-		8F33ED862074294300F210D2 /* CarTabPresenterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTabPresenterInput.swift; sourceTree = "<group>"; };
-		8F33ED882074298300F210D2 /* CarTabInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTabInteractorInput.swift; sourceTree = "<group>"; };
-		8F33ED8A2074298B00F210D2 /* CarTabInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTabInteractorOutput.swift; sourceTree = "<group>"; };
-		8F33ED8C2074299300F210D2 /* CarTabInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTabInteractor.swift; sourceTree = "<group>"; };
-		8F33ED8E2074299A00F210D2 /* CarTabPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTabPresenter.swift; sourceTree = "<group>"; };
 		8F33ED9020742D4C00F210D2 /* AppUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtils.swift; sourceTree = "<group>"; };
 		8F33ED9420742DDD00F210D2 /* Localization.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localization.strings; sourceTree = "<group>"; };
+		8F33EDA52074388800F210D2 /* PlaceMarkTabPresenterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceMarkTabPresenterInput.swift; sourceTree = "<group>"; };
+		8F33EDA62074388800F210D2 /* PlaceMarkInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceMarkInteractorOutput.swift; sourceTree = "<group>"; };
+		8F33EDA72074388800F210D2 /* PlaceMarkInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceMarkInteractorInput.swift; sourceTree = "<group>"; };
+		8F33EDA82074388800F210D2 /* PlaceMarkInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceMarkInteractor.swift; sourceTree = "<group>"; };
+		8F33EDA92074388900F210D2 /* PlaceMarkTabViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceMarkTabViewInput.swift; sourceTree = "<group>"; };
+		8F33EDAA2074388900F210D2 /* PlaceMarkPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceMarkPresenter.swift; sourceTree = "<group>"; };
 		8FA7300B2072B45600339030 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		8FA7300E2072B4DE00339030 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8FA730112072B56200339030 /* ConstantsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsTests.swift; sourceTree = "<group>"; };
@@ -196,9 +196,23 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		8F33EDA42074386800F210D2 /* Viper Compnents */ = {
+			isa = PBXGroup;
+			children = (
+				8F33EDA82074388800F210D2 /* PlaceMarkInteractor.swift */,
+				8F33EDA72074388800F210D2 /* PlaceMarkInteractorInput.swift */,
+				8F33EDA62074388800F210D2 /* PlaceMarkInteractorOutput.swift */,
+				8F33EDAA2074388900F210D2 /* PlaceMarkPresenter.swift */,
+				8F33EDA52074388800F210D2 /* PlaceMarkTabPresenterInput.swift */,
+				8F33EDA92074388900F210D2 /* PlaceMarkTabViewInput.swift */,
+			);
+			path = "Viper Compnents";
+			sourceTree = "<group>";
+		};
 		8FA730052072B40600339030 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				8F33EDA42074386800F210D2 /* Viper Compnents */,
 				8F33ED772074173500F210D2 /* Cells */,
 				8FA7300A2072B44F00339030 /* Base */,
 				8FDC58AB2072E29400F56F32 /* MapTab */,
@@ -285,12 +299,6 @@
 			children = (
 				8FDC58AE2072E31500F56F32 /* CarTabViewController.swift */,
 				8F33ED82207423ED00F210D2 /* CarTableViewDataSource.swift */,
-				8F33ED842074292B00F210D2 /* CarTabViewInput.swift */,
-				8F33ED862074294300F210D2 /* CarTabPresenterInput.swift */,
-				8F33ED8E2074299A00F210D2 /* CarTabPresenter.swift */,
-				8F33ED882074298300F210D2 /* CarTabInteractorInput.swift */,
-				8F33ED8A2074298B00F210D2 /* CarTabInteractorOutput.swift */,
-				8F33ED8C2074299300F210D2 /* CarTabInteractor.swift */,
 			);
 			path = CarTab;
 			sourceTree = "<group>";
@@ -708,27 +716,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F33EDAB2074388900F210D2 /* PlaceMarkTabPresenterInput.swift in Sources */,
+				8F33EDB02074388900F210D2 /* PlaceMarkPresenter.swift in Sources */,
 				8FE4EF162072AC1400058CD1 /* TabsViewController.swift in Sources */,
+				8F33EDAF2074388900F210D2 /* PlaceMarkTabViewInput.swift in Sources */,
 				8F33ED9120742D4C00F210D2 /* AppUtils.swift in Sources */,
+				8F33EDAE2074388900F210D2 /* PlaceMarkInteractor.swift in Sources */,
 				8FDC58AF2072E31500F56F32 /* CarTabViewController.swift in Sources */,
 				8FE4EF142072AC1400058CD1 /* AppDelegate.swift in Sources */,
 				8FA730262072C75A00339030 /* AlamofireDataRequestExtensions.swift in Sources */,
 				8F33ED83207423ED00F210D2 /* CarTableViewDataSource.swift in Sources */,
 				8FA730152072BB8400339030 /* PlacemarkResponse.swift in Sources */,
-				8F33ED872074294300F210D2 /* CarTabPresenterInput.swift in Sources */,
 				8F33ED792074174300F210D2 /* CarInfoTableViewCell.swift in Sources */,
-				8F33ED8F2074299A00F210D2 /* CarTabPresenter.swift in Sources */,
 				8FA7300C2072B45600339030 /* BaseViewController.swift in Sources */,
-				8F33ED8D2074299300F210D2 /* CarTabInteractor.swift in Sources */,
+				8F33EDAC2074388900F210D2 /* PlaceMarkInteractorOutput.swift in Sources */,
 				8FA730272072C75A00339030 /* BaseMappableNetworkRequest.swift in Sources */,
+				8F33EDAD2074388900F210D2 /* PlaceMarkInteractorInput.swift in Sources */,
 				8FA730172072BB8D00339030 /* Placemark.swift in Sources */,
 				8FDC58AD2072E30E00F56F32 /* MapTabViewController.swift in Sources */,
 				8F33ED7B20741BAE00F210D2 /* IntExtensions.swift in Sources */,
 				8FA7300F2072B4DE00339030 /* Constants.swift in Sources */,
-				8F33ED8B2074298B00F210D2 /* CarTabInteractorOutput.swift in Sources */,
-				8F33ED852074292B00F210D2 /* CarTabViewInput.swift in Sources */,
 				8FA730212072C73600339030 /* PlacemarkListService.swift in Sources */,
-				8F33ED892074298300F210D2 /* CarTabInteractorInput.swift in Sources */,
 				8FA730282072C75A00339030 /* BaseNetworkRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

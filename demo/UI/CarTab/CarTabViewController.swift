@@ -13,8 +13,8 @@ class CarTabViewController: BaseViewController{
     @IBOutlet var dataSource: CarTableViewDataSource!
     @IBOutlet weak var carsTableView: UITableView!
     
-    private var presenter: CarTabPresenterInput!
-    private var carIntractor: CarTabInteractorInput!
+    private var presenter: PlaceMarkTabPresenterInput!
+    private var carIntractor: PlaceMarkInteractorInput!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,11 +24,11 @@ class CarTabViewController: BaseViewController{
     }
     
     private func initializePresenter(){
-        presenter = CarTabPresenter()
-        carIntractor = CarTabInteractor()
-        carIntractor.output = presenter as? CarTabInteractorOutput
+        presenter = PlaceMarkPresenter()
+        carIntractor = PlaceMarkInteractor()
+        carIntractor.output = presenter as? PlaceMarkInteractorOutput
         presenter.carView = self
-        presenter.carIntractor = carIntractor
+        presenter.intractor = carIntractor
     }
     
     private func prepareTableView(){
@@ -39,7 +39,7 @@ class CarTabViewController: BaseViewController{
 }
 
 //MARK: CarTabViewInput
-extension CarTabViewController: CarTabViewInput{
+extension CarTabViewController: PlaceMarkTabViewInput{
     
     func showLoadingCarsError(_ message: String) {
         showErrorMessage(message)
