@@ -13,6 +13,14 @@
 		8F33ED7F20741C2900F210D2 /* CarInfoTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33ED7E20741C2900F210D2 /* CarInfoTableViewCellTests.swift */; };
 		8F33ED8120741C4900F210D2 /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33ED8020741C4900F210D2 /* TestHelper.swift */; };
 		8F33ED83207423ED00F210D2 /* CarTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33ED82207423ED00F210D2 /* CarTableViewDataSource.swift */; };
+		8F33ED852074292B00F210D2 /* CarTabViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33ED842074292B00F210D2 /* CarTabViewInput.swift */; };
+		8F33ED872074294300F210D2 /* CarTabPresenterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33ED862074294300F210D2 /* CarTabPresenterInput.swift */; };
+		8F33ED892074298300F210D2 /* CarTabInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33ED882074298300F210D2 /* CarTabInteractorInput.swift */; };
+		8F33ED8B2074298B00F210D2 /* CarTabInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33ED8A2074298B00F210D2 /* CarTabInteractorOutput.swift */; };
+		8F33ED8D2074299300F210D2 /* CarTabInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33ED8C2074299300F210D2 /* CarTabInteractor.swift */; };
+		8F33ED8F2074299A00F210D2 /* CarTabPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33ED8E2074299A00F210D2 /* CarTabPresenter.swift */; };
+		8F33ED9120742D4C00F210D2 /* AppUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33ED9020742D4C00F210D2 /* AppUtils.swift */; };
+		8F33ED9520742DDD00F210D2 /* Localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8F33ED9420742DDD00F210D2 /* Localization.strings */; };
 		8FA7300C2072B45600339030 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA7300B2072B45600339030 /* BaseViewController.swift */; };
 		8FA7300F2072B4DE00339030 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA7300E2072B4DE00339030 /* Constants.swift */; };
 		8FA730122072B56200339030 /* ConstantsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA730112072B56200339030 /* ConstantsTests.swift */; };
@@ -64,6 +72,14 @@
 		8F33ED7E20741C2900F210D2 /* CarInfoTableViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarInfoTableViewCellTests.swift; sourceTree = "<group>"; };
 		8F33ED8020741C4900F210D2 /* TestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelper.swift; sourceTree = "<group>"; };
 		8F33ED82207423ED00F210D2 /* CarTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTableViewDataSource.swift; sourceTree = "<group>"; };
+		8F33ED842074292B00F210D2 /* CarTabViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTabViewInput.swift; sourceTree = "<group>"; };
+		8F33ED862074294300F210D2 /* CarTabPresenterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTabPresenterInput.swift; sourceTree = "<group>"; };
+		8F33ED882074298300F210D2 /* CarTabInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTabInteractorInput.swift; sourceTree = "<group>"; };
+		8F33ED8A2074298B00F210D2 /* CarTabInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTabInteractorOutput.swift; sourceTree = "<group>"; };
+		8F33ED8C2074299300F210D2 /* CarTabInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTabInteractor.swift; sourceTree = "<group>"; };
+		8F33ED8E2074299A00F210D2 /* CarTabPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTabPresenter.swift; sourceTree = "<group>"; };
+		8F33ED9020742D4C00F210D2 /* AppUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtils.swift; sourceTree = "<group>"; };
+		8F33ED9420742DDD00F210D2 /* Localization.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localization.strings; sourceTree = "<group>"; };
 		8FA7300B2072B45600339030 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		8FA7300E2072B4DE00339030 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8FA730112072B56200339030 /* ConstantsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsTests.swift; sourceTree = "<group>"; };
@@ -172,6 +188,14 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		8F33ED9320742DCF00F210D2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8F33ED9420742DDD00F210D2 /* Localization.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		8FA730052072B40600339030 /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,6 +231,7 @@
 			children = (
 				8FA7300E2072B4DE00339030 /* Constants.swift */,
 				8F33ED7A20741BAE00F210D2 /* IntExtensions.swift */,
+				8F33ED9020742D4C00F210D2 /* AppUtils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -260,6 +285,12 @@
 			children = (
 				8FDC58AE2072E31500F56F32 /* CarTabViewController.swift */,
 				8F33ED82207423ED00F210D2 /* CarTableViewDataSource.swift */,
+				8F33ED842074292B00F210D2 /* CarTabViewInput.swift */,
+				8F33ED862074294300F210D2 /* CarTabPresenterInput.swift */,
+				8F33ED8E2074299A00F210D2 /* CarTabPresenter.swift */,
+				8F33ED882074298300F210D2 /* CarTabInteractorInput.swift */,
+				8F33ED8A2074298B00F210D2 /* CarTabInteractorOutput.swift */,
+				8F33ED8C2074299300F210D2 /* CarTabInteractor.swift */,
 			);
 			path = CarTab;
 			sourceTree = "<group>";
@@ -297,6 +328,7 @@
 		8FE4EF122072AC1400058CD1 /* demo */ = {
 			isa = PBXGroup;
 			children = (
+				8F33ED9320742DCF00F210D2 /* Resources */,
 				8FA730082072B41B00339030 /* Utils */,
 				8FA730072072B41400339030 /* Network */,
 				8FA730062072B40D00339030 /* Models */,
@@ -448,6 +480,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FE4EF1E2072AC1400058CD1 /* LaunchScreen.storyboard in Resources */,
+				8F33ED9520742DDD00F210D2 /* Localization.strings in Resources */,
 				8FE4EF1B2072AC1400058CD1 /* Assets.xcassets in Resources */,
 				8FE4EF192072AC1400058CD1 /* Main.storyboard in Resources */,
 			);
@@ -480,6 +513,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-demo-demoTests/Pods-demo-demoTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Localize-Swift/Localize_Swift.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
@@ -491,6 +525,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Localize_Swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
@@ -578,6 +613,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-demo/Pods-demo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Localize-Swift/Localize_Swift.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
@@ -587,6 +623,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Localize_Swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
@@ -606,6 +643,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-demo-demoUITests/Pods-demo-demoUITests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Localize-Swift/Localize_Swift.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
@@ -617,6 +655,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Localize_Swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
@@ -670,19 +709,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FE4EF162072AC1400058CD1 /* TabsViewController.swift in Sources */,
+				8F33ED9120742D4C00F210D2 /* AppUtils.swift in Sources */,
 				8FDC58AF2072E31500F56F32 /* CarTabViewController.swift in Sources */,
 				8FE4EF142072AC1400058CD1 /* AppDelegate.swift in Sources */,
 				8FA730262072C75A00339030 /* AlamofireDataRequestExtensions.swift in Sources */,
 				8F33ED83207423ED00F210D2 /* CarTableViewDataSource.swift in Sources */,
 				8FA730152072BB8400339030 /* PlacemarkResponse.swift in Sources */,
+				8F33ED872074294300F210D2 /* CarTabPresenterInput.swift in Sources */,
 				8F33ED792074174300F210D2 /* CarInfoTableViewCell.swift in Sources */,
+				8F33ED8F2074299A00F210D2 /* CarTabPresenter.swift in Sources */,
 				8FA7300C2072B45600339030 /* BaseViewController.swift in Sources */,
+				8F33ED8D2074299300F210D2 /* CarTabInteractor.swift in Sources */,
 				8FA730272072C75A00339030 /* BaseMappableNetworkRequest.swift in Sources */,
 				8FA730172072BB8D00339030 /* Placemark.swift in Sources */,
 				8FDC58AD2072E30E00F56F32 /* MapTabViewController.swift in Sources */,
 				8F33ED7B20741BAE00F210D2 /* IntExtensions.swift in Sources */,
 				8FA7300F2072B4DE00339030 /* Constants.swift in Sources */,
+				8F33ED8B2074298B00F210D2 /* CarTabInteractorOutput.swift in Sources */,
+				8F33ED852074292B00F210D2 /* CarTabViewInput.swift in Sources */,
 				8FA730212072C73600339030 /* PlacemarkListService.swift in Sources */,
+				8F33ED892074298300F210D2 /* CarTabInteractorInput.swift in Sources */,
 				8FA730282072C75A00339030 /* BaseNetworkRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

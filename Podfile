@@ -16,6 +16,9 @@ target 'demo' do
     pod 'RxSwift', '~> 4.0.0'
     pod 'RxCocoa', '~> 4.0.0'
     
+    ###Localization
+    pod 'Localize-Swift'
+
     def testing_pods
         pod 'Quick', '~> 1.2'
         pod 'Nimble', '~> 7.0'

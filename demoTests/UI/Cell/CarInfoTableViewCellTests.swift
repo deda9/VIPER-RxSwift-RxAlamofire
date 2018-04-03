@@ -56,9 +56,14 @@ class CarInfoTableViewCellTests: QuickSpec {
                 expect(cell.carNameLabel).notTo(beNil())
             }
             
-            it("cell Car Name Label must equat HH-GO8522") {
+            it("cell Car Name Label must equal HH-GO8522") {
                 let cell = getCarInfoTableViewCell()
                 expect(cell.carNameLabel.text).to(equal("HH-GO8522"))
+            }
+            
+            it("cell Car Name Label must NOT equal HHs-sss") {
+                let cell = getCarInfoTableViewCell()
+                expect(cell.carNameLabel.text).notTo(equal("HHs-sss"))
             }
         }
         

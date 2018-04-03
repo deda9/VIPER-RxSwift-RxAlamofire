@@ -10,11 +10,15 @@ import ObjectMapper
 
 public class PlacemarkResponse: Mappable{
     
-    var placemarksList : [Placemark]?
+    private var _placemarksList : [Placemark]?
+    
+    var placemarksList : [Placemark]{
+        return _placemarksList ?? []
+    }
     
     required public init?(map: Map){}
     
     public func mapping(map: Map){
-        placemarksList <- map["placemarks"]
+        _placemarksList <- map["placemarks"]
     }
 }

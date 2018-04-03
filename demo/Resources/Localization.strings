@@ -1,0 +1,10 @@
+/* 
+  Localization.strings
+  demo
+
+  Created by Bassem Qoulta on 4/3/18.
+  Copyright © 2018 Bassem Qoulta. All rights reserved.
+*/
+
+"someThingIsWrong" = "Something went wrong, please try again";
+
