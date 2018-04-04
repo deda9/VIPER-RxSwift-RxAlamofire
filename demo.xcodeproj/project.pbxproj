@@ -42,6 +42,7 @@
 		8FE4EF1E2072AC1400058CD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FE4EF1C2072AC1400058CD1 /* LaunchScreen.storyboard */; };
 		8FE4EF292072AC1500058CD1 /* demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4EF282072AC1500058CD1 /* demoTests.swift */; };
 		8FE4EF342072AC1500058CD1 /* demoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4EF332072AC1500058CD1 /* demoUITests.swift */; };
+		8FEFB47B2075937A000F2116 /* MapTabViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEFB47A2075937A000F2116 /* MapTabViewControllerTests.swift */; };
 		B8174A1F74DEF91D0F900FAB /* Pods_demo_demoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C87C88E01104097F3DEC7C99 /* Pods_demo_demoTests.framework */; };
 		C3A432C11546183C32951252 /* Pods_demo_demoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D030BD68966483E4AA9064BC /* Pods_demo_demoUITests.framework */; };
 /* End PBXBuildFile section */
@@ -108,6 +109,7 @@
 		8FE4EF2F2072AC1500058CD1 /* demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = demoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FE4EF332072AC1500058CD1 /* demoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demoUITests.swift; sourceTree = "<group>"; };
 		8FE4EF352072AC1500058CD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FEFB47A2075937A000F2116 /* MapTabViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTabViewControllerTests.swift; sourceTree = "<group>"; };
 		96CA02F07816699BD37C1B57 /* Pods_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C341F7A201BCEB27455F2562 /* Pods-demo-demoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demo-demoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-demo-demoUITests/Pods-demo-demoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C87C88E01104097F3DEC7C99 /* Pods_demo_demoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_demo_demoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -178,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				8F33ED7D20741C2200F210D2 /* Cell */,
+				8FEFB47A2075937A000F2116 /* MapTabViewControllerTests.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -750,6 +753,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FE4EF292072AC1500058CD1 /* demoTests.swift in Sources */,
+				8FEFB47B2075937A000F2116 /* MapTabViewControllerTests.swift in Sources */,
 				8F33ED8120741C4900F210D2 /* TestHelper.swift in Sources */,
 				8FA730122072B56200339030 /* ConstantsTests.swift in Sources */,
 				8F33ED7F20741C2900F210D2 /* CarInfoTableViewCellTests.swift in Sources */,

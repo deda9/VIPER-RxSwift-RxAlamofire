@@ -19,6 +19,17 @@ public class Placemark: Mappable{
     private var _name : String?
     private var _vin : String?
     
+    var allInfoInOneLine: String{
+        var text = engineType
+        text += ", "
+        text += exterior
+        text += ", "
+        text += fuel.toString()
+        text += ", "
+        text += interior
+        return text
+    }
+    
     var address : String{
         return _address ?? ""
     }

@@ -26,7 +26,7 @@ class CarInfoTableViewCellTests: QuickSpec {
             sutCarViewController = UIStoryboard(name: "Main", bundle: nil)
                 .instantiateViewController(withIdentifier: "CarTabViewController") as! CarTabViewController
             
-            sutTableViewDelegate.setPlaceMarkList(sutResponse.placemarksList!)
+            sutTableViewDelegate.setPlaceMarkList(sutResponse.placemarksList)
         }
         
         describe("CarInfoTableViewCell initialization") {
@@ -73,6 +73,4 @@ class CarInfoTableViewCellTests: QuickSpec {
             return cell
         }
     }
-    
-    
 }
