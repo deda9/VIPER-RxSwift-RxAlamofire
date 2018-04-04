@@ -26,7 +26,7 @@ it show the data in two tabs :
 
 1-[Alamofire](https://github.com/Alamofire/Alamofire)
 
-2-[RxSwift] (https://github.com/ReactiveX/RxSwift)
+2-[RxSwift](https://github.com/ReactiveX/RxSwift)
 
 3-[ObjectMapper](https://github.com/Hearst-DD/ObjectMapper)
 
