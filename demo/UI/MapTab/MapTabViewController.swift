@@ -49,6 +49,9 @@ extension MapTabViewController: PlaceMarkTabViewInput{
         activityIndicatorView.centerParent(of: self.mapView)
     }
     
+    /**
+     * Loop on each PlaceMark to add its marker on mapview
+     */
     func showCars(for list: [Placemark]){
         list.forEach{
             addAnnotationForMapView(CLLocation(latitude: $0.late, longitude: $0.long),
@@ -71,6 +74,9 @@ extension MapTabViewController: PlaceMarkTabViewInput{
 //MARK: MKMapViewDelegate
 extension MapTabViewController: MKMapViewDelegate{
     
+    /**
+     * Zoom the mapview to center the markers
+     */
     func zoomMap(byFactor delta: Double, centerLocation: (lat: Double, long: Double)) {
         var region: MKCoordinateRegion = self.mapView.region
         var span: MKCoordinateSpan = self.mapView.region.span
@@ -82,6 +88,9 @@ extension MapTabViewController: MKMapViewDelegate{
         mapView.setRegion(region, animated: true)
     }
     
+    /**
+     * MapView Delegate to show markers with MapView
+     */
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView?{
         if (annotation is MKUserLocation) {
             return nil
@@ -100,6 +109,9 @@ extension MapTabViewController: MKMapViewDelegate{
         return annotationView
     }
     
+    /**
+     * Show/Hide markers when click on one
+     */
     @objc func didTapOnMarker(_ sender: UITapGestureRecognizer){
         guard let clikedMarker = sender.view as? MKAnnotationView,
             let clikedMarkerTitle = clikedMarker.annotation?.title else { return }
@@ -122,6 +134,9 @@ extension MapTabViewController: MKMapViewDelegate{
         }
     }
     
+    /**
+     * Add title and data for each Marker
+     */
     fileprivate func addAnnotationForMapView(_ location: CLLocation?, address locationAddress: String, subtitle: String){
         if let coordinates = location?.coordinate{
             let mapAnnotation = MKPointAnnotation()
