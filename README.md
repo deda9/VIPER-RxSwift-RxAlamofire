@@ -1,6 +1,6 @@
 Hey! 
 
-This task it written for [Wunder](http://wunder.org) Interview
+This demo show how to use Rxswift + RxAlamofire with tableviews data & google maps
 
 This demo is written by **VIPER Architecture** , **RxSwift**, **Alamofire**, **SOLID** and follow 
 
